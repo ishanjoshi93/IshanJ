@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section id="main">
+  <div class="home-btn"><a href="/"><i class="fas fa-arrow-left"></i> <span class="back-text">Back</span></a></div>
+  <div class="title-container"><h1 id="title">{{ .Title }}</h1></div>
+  <div class="info">
+    <span id="date">{{ .Date.Format "2 Jan, 2006" }}</span> | <span id="readtime">{{div .WordCount 220}} min read</span>
+  </div>
+  <div>
+    <article id="content">
+      {{ .Content }}
+    </article>
+  </div>
+  <div class="readNext">
+    <h4>Read Next</h4>
+    {{ with .PrevInSection }}
+      <a class="previous" href="{{.Permalink}}"> {{.Title}}</a>
+    {{ end }}
+    {{ with .NextInSection }}
+      <a class="next" href="{{.Permalink}}"> {{.Title}}</a>
+    {{ end }}
+  </div>
+</section>
+<!-- <aside id="meta">
+    <div>
+    {{ with .Params.topics }}
+    <ul id="topics">
+      {{ range . }}
+        <li><a href="{{ "topics" | absURL}}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    {{ with .Params.tags }}
+    <ul id="tags">
+      {{ range . }}
+        <li> <a href="{{ "tags" | absURL }}{{ . | urlize }}">{{ . }}</a> </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+    </div>
+</aside> -->
+{{ end }}

@@ -1,0 +1,12 @@
+baseURL = "http://www.ishanj.com"
+languageCode = "en-us"
+title = "Ishan Joshi"
+
+summaryLength = 24
+publishDir = "ishanjoshi.tech"
+contentDir = "content/posts"
+
+googleAnalytics = "UA-172140037-1"
+
+[permalinks]
+  posts = "/:title/"

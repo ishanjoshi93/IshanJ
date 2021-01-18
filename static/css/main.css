@@ -1,0 +1,276 @@
+:root {
+    margin: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: #464646;
+    font-family: 'Noto Serif', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #2E2C2C;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: #3C6C99;
+}
+
+.about {
+    position: absolute;
+    width: 240px;
+    padding: 1rem;
+    left: auto;
+    right: auto;
+    font-size: 16px;
+    text-align: center;
+    border-right: 2px solid #2E2C2C;
+}    
+
+.profile-picture {
+    height: 160px;
+    border-radius: 50%;
+}
+
+.aboutMe {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.contact {
+    margin-top: 1.5rem;
+}
+
+    .contact > a {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        font-size: 1.25rem;
+        color: #2E2C2C;
+    }
+
+        .contact > a:hover {
+            color: #3C6C99;
+        }
+
+.line {
+    display: none;
+    height: 2px;
+    width: 90%;
+    background-color: #2E2C2C;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+main {
+margin-left: 280px;
+/* border-left: 2px solid #2E2C2C; */
+}
+
+ul {
+padding: 0;
+}
+
+.post {
+    max-width: 800px;
+    margin-left: 1rem;
+}
+
+    .post > li {
+    list-style: none;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid #e5e5e5;
+    box-shadow: 4px 4px 4px #E5E5E5;
+    display: flex;
+    }
+
+        .post >li:hover {
+            background-color: rgba(189, 185, 185, 0.37);
+            transition-delay: 0.3s;
+        }
+
+    .post > li > a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+.thumbnail-image {
+    height: 100%;
+    width: 240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 1rem;
+}
+
+.article-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.summary {
+    color: #464646;
+    margin-top: 0.5rem;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+#main {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+    margin-bottom: 5%;
+}
+
+.home-btn {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+    .home-btn > a {
+        color: #707070;
+    }
+
+    .back-text {
+        text-decoration: underline;
+    }
+
+#title {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.info {
+    font-style: italic;
+    font-size: 0.8rem;
+    width: 100%;
+}
+
+#content {
+    width: 100%;
+    text-align: justify;
+}
+
+.readNext {
+    border-top: 2px solid black;
+}
+
+.cover {
+    display: block;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photos {
+    max-width: 100%;
+    height: auto;
+}
+
+.caption {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+    #main {
+        width: 84%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+
+    :root {
+        padding: 0;
+    }
+
+    .about {
+        position: static;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin-right: 0;
+        border: none;
+    }
+
+    .profile-picture {
+        margin-top: 1rem;
+    }
+
+    .myName {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .aboutMe {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact {
+        margin-top: 1rem;
+    }
+
+    .line {
+        display: block;
+    }
+
+    main {
+        margin-left: 0;
+        border: none;
+    }
+
+    .post {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 96%;
+    }
+
+
+@media screen and (max-width: 639px) {
+
+    .post > li {
+        display: block;
+        }
+
+        .post > li > a {
+            display: flex;
+            flex-direction: column;
+        }
+
+    .thumbnail-image {
+        height: 160px;
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .article-title {
+        text-align: justify;
+    }
+
+    #main {
+        width: 96%;
+    }
+}
+}

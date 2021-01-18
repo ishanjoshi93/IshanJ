@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<div class="about">
+    <img src="/images/Ishan2.jpg" alt="profile-picture" class="profile-picture">
+    <h3 class="myName">Ishan Joshi</h3>
+    <p class="aboutMe">
+        I follow and love all things related to tech. 
+        Sometimes that involves afterthought, analysis and imagining what can be.<br><br> 
+        This is my blog where I put to words all of the above.
+    </p>
+    <div class="contact">
+        <a href="mailto:ishanjoshi93@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/ishan-joshi/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/ishanjoshi" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+</div>
+
+<div class="line"></div>
+
+<main>
+    <ul>
+    <!-- Ranges through content/posts/*.md -->
+    {{ range .Site.RegularPages }}
+            <div class="post">
+                <li>
+                    <a href="{{.RelPermalink}}">
+                        <div style="background-image: url({{ with .Params.image }}{{ . }}{{ end }});" class="thumbnail-image"></div>
+                        <div class="text">
+                            <h3 class="article-title">{{.Title}}</h3>
+                            <p class="summary">{{ .Summary}}</p>
+                            <a href="{{.RelPermalink}}" class="read-more">read more...</a>
+                        </div>
+                    </a>
+                </li>
+            </div>
+    {{ end }}
+    </ul>
+</main>
+
+{{ end }}
