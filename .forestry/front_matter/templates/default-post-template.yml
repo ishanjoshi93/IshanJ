@@ -14,3 +14,5 @@ fields:
 - type: textarea
   name: summary
   label: summary
+pages:
+- content/posts/why-do-companies-bundle-products-and-services-a-case-study-on-apple.md
