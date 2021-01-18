@@ -1,0 +1,16 @@
+---
+label: Default Post Template
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: image
+  label: image
+- type: textarea
+  name: summary
+  label: summary
