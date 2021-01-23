@@ -4,7 +4,7 @@ title = "Ishan Joshi"
 
 summaryLength = 24
 publishDir = "./public/"
-contentDir = "./content/posts"
+contentDir = "content/posts"
 
 googleAnalytics = "UA-172140037-1"
 
